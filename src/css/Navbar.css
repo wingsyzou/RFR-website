@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar .leftSide {
+    font-weight: bold;
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #236F21;
+    padding-left: 15px;
+  }
+  
+  .navbar .leftSide img {
+    width: 70px;
+    padding-right: 15px;
+  }
+  
+  .navbar .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a {
+    color: #236F21;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 15px;
+    padding-right: 0%;
+  }
+

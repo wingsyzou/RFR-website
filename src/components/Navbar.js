@@ -8,7 +8,7 @@ function Navbar() {
     <div className="navbar">
       <div className="leftSide">
         <img src={Logo} />
-        <h1>Rapid Fence Renewals</h1>
+        <Link to="/"> Rapid Fence Renewals </Link>
       </div>
       <div className="rightSide">
         <Link to="/"> Home </Link>

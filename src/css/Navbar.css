@@ -43,8 +43,28 @@
   padding-right: 0%;
 }
 
-@media only screen and (max-width: 1000px) {
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: #236F21;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar .leftSide a {
+    font-size: 28px;
+  }
   .navbar .rightSide a {
+    display: none;
+  }
+  .navbar .rightSide button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .navbar .rightSide button {
     display: none;
   }
 }

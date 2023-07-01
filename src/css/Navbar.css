@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #fff;
   display: flex;
   flex-direction: row;
@@ -11,18 +11,14 @@
    height: 100%;
    display: flex;
    align-items: center;
-   font-size: 24px;
+   font-size: 20px;
    color: #236F21;
    padding-left: 10px;
-}
-  
-.navbar .leftSide a {
-  font-size: 38px;
-  font-weight: bold;
+   white-space: nowrap;
 }
 
 .navbar .leftSide img {
-  width: 70px;
+  width: 50px;
   padding-right: 15px;
 }
   
@@ -51,21 +47,30 @@
   transform: scale(2);
 }
 
-@media only screen and (max-width: 950px) {
-  .navbar .leftSide a {
-    font-size: 28px;
-  }
+@media only screen and (max-width: 950px) { /* behaviour when the screen width <= 950 px*/
   .navbar .rightSide a {
     display: none;
   }
   .navbar .rightSide button {
     display: inherit;
   }
+  .navbar #open .hiddenLinks {
+    display: inherit;
+  }
+  
+  .navbar #close .hiddenLinks {
+    display: none;
+  }
+  .navbar #open h1 {
+    display: none;
+ }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 950px) { /* behaviour when the screen width > 950 px*/
   .navbar .rightSide button {
     display: none;
   }
+  .navbar .leftSide .hiddenLinks {
+    display: none;
+  }
 }
-

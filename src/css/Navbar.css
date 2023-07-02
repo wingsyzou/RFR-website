@@ -43,7 +43,11 @@
   border: none;
   color: #236F21;
   cursor: pointer;
-  transform: scale(2);
+
+}
+
+.navbar .rightSide svg {
+  font-size: 45px;
 }
 
 @media only screen and (max-width: 950px) { /* behaviour when the screen width <= 950 px*/

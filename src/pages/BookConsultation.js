@@ -73,7 +73,7 @@ function BookConsultation() {
         <input
           type="tel"
           name="phone"
-          placeholder="Phone (optional)"
+          placeholder="Phone"
           value={phone}
           onChange={handleInputChange}
         />
@@ -87,7 +87,7 @@ function BookConsultation() {
         <input
           type="text"
           name="address2"
-          placeholder="Address Line 2 (required)"
+          placeholder="Address Line 2"
           value={address2}
           onChange={handleInputChange}
         />

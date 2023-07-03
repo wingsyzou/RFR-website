@@ -1,0 +1,47 @@
+.service-details {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-details h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.service-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-details input,
+.service-details textarea {
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.service-details textarea {
+    height: 120px;
+    width: 400px;
+}
+
+.service-details button {
+    padding: 10px 20px;
+    background-color: #236F21;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    align-items: center;
+}
+
+.service-details button:hover {
+    background-color: #1C511A;
+}
+

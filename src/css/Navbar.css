@@ -1,9 +1,9 @@
 .navbar {
-  width: 100%;
-  height: 80px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
+   width: 100%;
+   height: 80px;
+   background-color: #fff;
+   display: flex;
+   flex-direction: row;
 }
   
 .navbar .leftSide {
@@ -18,61 +18,61 @@
 }
 
 .navbar .leftSide img {
-  width: 50px;
-  padding-right: 15px;
+   width: 50px;
+   padding-right: 15px;
 }
   
 .navbar .rightSide {
-  flex: 60%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+   flex: 60%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .navbar a {
-  color: #236F21;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  margin: 10px;
+   color: #236F21;
+   font-size: 24px;
+   font-weight: bold;
+   text-decoration: none;
+   margin: 10px;
 }
 
 .navbar .rightSide button {
-  background-color: transparent;
-  border: none;
-  color: #236F21;
-  cursor: pointer;
+   background-color: transparent;
+   border: none;
+   color: #236F21;
+   cursor: pointer;
 }
 
 .navbar .rightSide svg {
-  font-size: 45px;
+   font-size: 45px;
 }
 
 @media only screen and (max-width: 950px) { /* behaviour when the screen width <= 950 px*/
-  .navbar .rightSide a {
-    display: none;
-  }
-  .navbar .rightSide button {
-    display: inherit;
-  }
-  .navbar #open .hiddenLinks {
-    display: inherit;
-  }
-  
-  .navbar #close .hiddenLinks {
-    display: none;
-  }
-  .navbar #open h1 {
-    display: none;
- }
+   .navbar .rightSide a {
+     display: none;
+   }
+   .navbar .rightSide button {
+     display: inherit;
+   }
+   .navbar #open .hiddenLinks {
+     display: inherit;
+   }
+   
+   .navbar #close .hiddenLinks {
+     display: none;
+   }
+   .navbar #open h1 {
+     display: none;
+   }
 }
 
 @media only screen and (min-width: 950px) { /* behaviour when the screen width > 950 px*/
-  .navbar .rightSide button {
-    display: none;
-  }
-  .navbar .leftSide .hiddenLinks {
-    display: none;
-  }
+   .navbar .rightSide button {
+     display: none;
+   }
+   .navbar .leftSide .hiddenLinks {
+     display: none;
+   }
 }

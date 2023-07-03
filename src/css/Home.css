@@ -1,43 +1,38 @@
-.home {
+.header {
+    background-image: url("../assets/backyard.jpg");
     background-size: cover;
-    background-position: center;
-    height: 80vh;
+    height: 70vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.headerContainer h1 {
-    white-space: nowrap;
-    justify-content: center;
-    text-align: center;
-    font-size: 81px;
-    height: 60px;
+.header h1 {
+    white-space: no-wrap;
+    font-size: 5vw;
     font-weight: bold;
     color: #fff;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
 }
 
-.headerContainer button {
+.consultation {
+    display: flex;
+}
+
+.consultation-content {
+    font-size: 32px;
+    color: #236F21;
+    text-align: left;
+    font-weight: bold;
+}
+
+.consultation-button {
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    font-weight: bold;
-    color: #236F21;
-    height: 50px;
-    width: 180px;
-    font-size: 20px;
-}
-
-.headerContainer p {
-    font-size: 24px;
-    color:#fff;
-    justify-content: center;
-    text-align: left;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
+    background-color: #236F21;
+    color: #fff;
+    font-size: 18px;
 }

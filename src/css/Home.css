@@ -1,5 +1,5 @@
 .home {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 80vh;
     display: flex;
@@ -32,4 +32,12 @@
     height: 50px;
     width: 180px;
     font-size: 20px;
-  }
+}
+
+.headerContainer p {
+    font-size: 24px;
+    color:#fff;
+    justify-content: center;
+    text-align: left;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
+}

@@ -8,7 +8,7 @@ function Home() {
     <div className="home" style={{ background: `url(${Banner})` }}>
       <div className="headerContainer">
         <h1> Your Partner in Fence Restoration </h1>
-
+        <p> Book a free consultation with us </p>
         {/* add book function. ie asking for quote */}
         <button> BOOK NOW </button>  
 

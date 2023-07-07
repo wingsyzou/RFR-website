@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import '../css/BookConsultation.css'
+import '../css/BookConsultation.css';
 
 function BookConsultation() {
   const [name, setName] = useState("");

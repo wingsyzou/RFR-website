@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-position: center;
 }
 
 .header h1 {
@@ -73,4 +74,72 @@
 
 .consultation button:hover {
     background-color: #003307;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.reviews h1 {
+    white-space: no-wrap;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.review-slot-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin-right: 100px;
+}
+
+.review-slot-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin-left: 100px;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    flex-basis: 50%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.column-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-basis: 50%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px;
+}
+  
+@media (max-width: 900px) {
+    .column {
+      flex-basis: 100%;
+    }
+}
+
+.quote {
+    margin-top: 15px;
+    font-size: 24px;
 }

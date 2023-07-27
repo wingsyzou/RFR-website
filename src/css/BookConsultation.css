@@ -1,9 +1,27 @@
-.service-details {
-    max-width: 500px;
-    margin: 0 auto;
+.book-consultation {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    max-width: 100%;
+}
+
+.image-container {
+    flex: 2; 
+    margin-right: 20px; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.service-details {
+    flex: 1; 
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    margin-right: 20px;
 }
 
 .service-details h1 {
@@ -15,6 +33,7 @@
 .service-details form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .service-details input,
@@ -22,11 +41,7 @@
     margin-bottom: 25px;
     padding: 10px;
     font-size: 16px;
-}
-
-.service-details textarea {
-    height: 120px;
-    width: 400px;
+    width:90%;
 }
 
 .service-details button {
@@ -38,10 +53,26 @@
     border: none;
     cursor: pointer;
     width: 100px;
-    align-items: center;
 }
 
 .service-details button:hover {
     background-color: #1C511A;
 }
 
+.service-details button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 1200px) {
+    .book-consultation {
+        flex-direction: column; /* Switch to a vertical layout for smaller screens */
+        align-items: center; /* Center the content vertically for smaller screens */
+    }
+
+    .image-container {
+        margin-right: 0; /* Remove the right margin on smaller screens */
+        margin-bottom: 20px; /* Add some spacing between the image and .service-details */
+    }
+}

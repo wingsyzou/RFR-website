@@ -1,30 +1,42 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import "../css/ImageGallery.css";
 
 const ImageGallery = ({images}) => {
   const [currentImage, setCurrentImage] = useState(0);
+  const [hovered, setHovered] = useState(false);
 
-  const nextImage = () => {
-    setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-  };
+  useEffect(() => {
+    let intervalId;
 
-  const previousImage = () => {
-    setCurrentImage((prevImage) =>
-      prevImage === 0 ? images.length - 1 : prevImage - 1
-    );
-  };
+    if (hovered) {
+      intervalId = setInterval(() => {
+        setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+      }, 1500); 
+    }
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [hovered, images.length]);
+
+  useEffect(() => {
+    if (!hovered) {
+      setCurrentImage(0);
+    }
+  }, [hovered]);
 
   return (
-    <div className="image-gallery">
-      <button className="arrow left-arrow" onClick={previousImage}>
-        &#8249;
-      </button>
-      <img src={images[currentImage]} alt={`Image ${currentImage}`} />
-      <button className="arrow right-arrow" onClick={nextImage}>
-        &#8250;
-      </button>
+    <div
+      className="image-gallery"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{ "--current-image": currentImage }}
+    >
+      {images.map((image, index) => (
+        <img key={index} src={image} alt={`Image ${index}`} />
+      ))}
     </div>
   );
 }
 
-export default ImageGallery
+export default ImageGallery;

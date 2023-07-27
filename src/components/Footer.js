@@ -14,7 +14,7 @@ function Footer() {
         <div className="socialMedia">
           <InstagramIcon /> <TwitterIcon /> <FacebookIcon /> <LinkedInIcon /> <PinterestIcon /> <YoutubeIcon />
         </div>
-      <p> &copy; 2023 - Rapid Fence Renewal </p>
+      <p> &copy; 2023 - Rapid Fence Renewals </p>
     </div>
   )
 }

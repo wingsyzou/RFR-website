@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ImageGallery from "../components/ImageGallery";
-import OldFence from "../assets/old-fence.png";
-import WhiteFence from "../assets/white-fence.png";
+import Fence1B from "../assets/fence1-before.jpg";
+import Fence1A from "../assets/fence1-after.jpg";
+import Fence2B from "../assets/fence2-before.jpg";
+import Fence2A from "../assets/fence2-after.jpg";
+import Fence3B from "../assets/fence3-before.jpg";
+import Fence3A from "../assets/fence3-after.jpg";
 import "../css/Home.css";
 
 function Home() {
@@ -10,12 +14,16 @@ function Home() {
   const navigate = useNavigate();
 
   const gallery1 = [
-    OldFence,
-    WhiteFence
+    Fence1A,
+    Fence1B,
+    Fence2A,
+    Fence2B,
+    Fence3A,
+    Fence3B
   ];
 
   const quotes = [
-    '"Look how they renewed my fence!" - Karen',
+    '"These guys are very proffessional despite their age! They offered me a wonderful service at a great price!" - Twee Ta',
     '"They did such a great job! I would definitely recommend" - Sharon',
     '"These guys are great! Nice and kind gentlemen they are!" - Bill',
     '"I did not even know my fences needed to be taken care of. Thanks to Wing and Hieu my fences look brand new!" - Paul'

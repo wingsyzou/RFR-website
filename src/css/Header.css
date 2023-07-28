@@ -1,0 +1,19 @@
+.header {
+    background-image: url("../assets/backyard.jpg");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+}
+
+.header h1 {
+    white-space: no-wrap;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
+}

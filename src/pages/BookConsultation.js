@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import '../css/BookConsultation.css';
-import consultationImage from "../assets/white-fence.png";
+import Header from "../components/Header";
 
 function BookConsultation() {
   const [name, setName] = useState("");
@@ -55,9 +55,7 @@ function BookConsultation() {
 
   return (
     <div className="book-consultation">
-      <div className="image-container">
-        <img src={consultationImage} alt="Consultation" />
-      </div>
+      <Header />
       <div className="service-details">
         <h1>Book Consultation</h1>
         <form onSubmit={handleSubmit}>

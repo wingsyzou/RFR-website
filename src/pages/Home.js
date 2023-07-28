@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ImageGallery from "../components/ImageGallery";
+import Header from "../components/Header";
 import Fence1B from "../assets/fence1-before.jpg";
 import Fence1A from "../assets/fence1-after.jpg";
 import Fence2B from "../assets/fence2-before.jpg";
@@ -40,9 +41,7 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="header">
-        <h1> Your Partner in Fence Restoration </h1>
-      </div>
+      <Header />
       <div className="consultation">
         <Link to="/services"> All Services </Link>
         <Link to="/services/packages"> Packages </Link>

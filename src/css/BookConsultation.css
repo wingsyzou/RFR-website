@@ -1,33 +1,25 @@
 .book-consultation {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+    display: column;
     max-width: 100%;
 }
 
-.image-container {
-    flex: 2; 
-    margin-right: 20px; 
-}
-
-.image-container img {
-    max-width: 100%; 
-    height: auto;
+.booking-container{
+    display: flex;
 }
 
 .service-details {
     flex: 1; 
     padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
     background-color: #f8f8f8;
-    margin-right: 20px;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .service-details h1 {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .service-details form {
@@ -48,11 +40,11 @@
     padding: 10px 20px;
     background-color: #236F21;
     color: #fff;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    width: 100px;
+    width: 200px;
 }
 
 .service-details button:hover {
@@ -62,17 +54,4 @@
 .service-details button:disabled {
     background-color: #999;
     cursor: not-allowed;
-}
-
-/* Add responsive styling for smaller screens */
-@media (max-width: 1200px) {
-    .book-consultation {
-        flex-direction: column; /* Switch to a vertical layout for smaller screens */
-        align-items: center; /* Center the content vertically for smaller screens */
-    }
-
-    .image-container {
-        margin-right: 0; /* Remove the right margin on smaller screens */
-        margin-bottom: 20px; /* Add some spacing between the image and .service-details */
-    }
 }

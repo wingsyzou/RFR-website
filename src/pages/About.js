@@ -10,10 +10,10 @@ function About() {
         <Header />
         <div className="about-us">
           <h1>About Us</h1>
-          <p1>At Rapid Fence Renewals, we are a dynamic duo of passion-driven students. We both started our contracting journeys under mentorships, but have now branched off into starting our own contracting business. While we have chosen to focus on working with fences for now, we wish to expand our services into other areas of contracting that involve painting and pressure cleaning.
-
-          What sets us apart is our dedication to our clients and low prices. We aim to treat every single client with patience and respect, customer satisfaction is at the core of everything we do. We take pride in the smiles we bring to our clients' faces when they see the transformation of their fences and outdoor spaces. In addition, we quote our clients at below the market price because money is not our main motivation, instead we are more interested in honing our customer service and tool handling skills.
-          </p1>
+          <p className="about-paragraph">At Rapid Fence Renewals, we are a dynamic duo of passion-driven students. We both started our contracting journeys under <bold>mentorships</bold>, but have now branched off into starting our own contracting business. While we have chosen to focus on working with fences for now, we wish to expand our services into other areas of contracting that involve painting and pressure cleaning.
+          </p>
+          <p className="about-paragraph">What sets us apart is our <bold>dedication to our clients</bold> and <bold>low prices</bold>. We aim to treat every single client with patience and respect, customer satisfaction is at the core of everything we do. We take pride in the smiles we bring to our clients' faces when they see the transformation of their fences and outdoor spaces. Our commitment to setting low prices stems from our core philosophy, where financial gain is not our primary motivation. Rather, we prioritize customer service and technical skill development. We aim to create lasting impressions and foster strong, long-term relationships with our esteemed clientele.
+          </p>
         </div>
         <div className="individual-profiles">
           <div className="profile">

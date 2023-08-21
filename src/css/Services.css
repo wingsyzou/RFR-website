@@ -30,8 +30,17 @@
 }
   
 .photos img {
-    width: 45%;
     border-radius: 8px;
+    width: 100%;
+}
+
+.photo-item {
+    text-align: center;
+    width: 45%;
+}
+  
+.photo-description {
+    font-size: 18px;
 }
 
 .packageTitle {

@@ -50,8 +50,14 @@ function Services() {
         ))}
       </div>
       <div className="photos">
-        <img src={washedVsUnwashed} alt="Picture of pressure washed fence versus to unwashed fence"></img>
-        <img src={sanding} alt="Picture of us sanding a fence"></img>
+        <div className="photo-item">
+          <img src={washedVsUnwashed} alt="Picture of pressure washed fence versus to unwashed fence"></img>
+          <p className="photo-description">The leftside shows what the fence looked like before, and the rightside shows what it looks like after being pressure washed</p>
+        </div>
+        <div className="photo-item">
+          <img src={sanding} alt="Picture of us sanding a fence"></img>
+          <p className="photo-description">After being washed, we use a combination of different sanders to complete the preparation before painting or staining</p>
+        </div>
       </div>
       <h1 className="packageTitle" id="packages">Packages</h1>
       <div className="packages" ref={packagesRef}>

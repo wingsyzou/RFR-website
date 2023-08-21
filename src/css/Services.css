@@ -79,4 +79,10 @@
     .serviceItem {
       width: 100%;
     }
+
+    .basic, .premium {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 }

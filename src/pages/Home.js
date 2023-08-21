@@ -44,7 +44,7 @@ function Home() {
       <Header title="Your Partners in Fence Restoration" />
       <div className="consultation">
         <Link to="/services"> All Services </Link>
-        <Link to="/services/packages"> Packages </Link>
+        <Link to="/services#packages"> Packages </Link>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Header from "../components/Header";
 import '../css/Services.css';
 
 function Services() {
+  const packagesRef = useRef(null);
+
+  useEffect(() => {
+    if (window.location.hash === '#packages') {
+      packagesRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+  
   const servicesList = [
     "Fence Painting and Staining",
     "Deck Painting and Staining",
@@ -39,8 +47,8 @@ function Services() {
           </div>
         ))}
       </div>
-      <h1 className="packageTitle">Packages</h1>
-      <div className="packages">
+      <h1 className="packageTitle" id="packages">Packages</h1>
+      <div className="packages" ref={packagesRef}>
         <div className="basic">
           <h2>Basic</h2>
           {basic.map((item, index) => (

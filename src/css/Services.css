@@ -1,0 +1,82 @@
+.servicesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.serviceItem {
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    font-weight: bold;
+    position: relative;
+    font-size: 24px;
+}
+
+.serviceIcon {
+    position: absolute;
+    font-size: 30px;
+    top: 8px;
+    left: 15px;
+    color: green;
+}
+
+.packageTitle {
+    background-color: #236F21;
+    text-align: center;
+    justify-content: center;
+    font-size: 64px;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.packages {
+    background-color: #236F21;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.packages h2 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.basic, .premium {
+    width: 40%;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.basic {
+    margin-left: 5%;
+}
+
+.premium {
+    margin-right: 5%;
+}
+
+.basicItem, .premiumItem {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.bulletpoint {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+@media (max-width: 950px) {
+    .serviceItem {
+      width: 100%;
+    }
+}

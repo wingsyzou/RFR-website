@@ -8,6 +8,11 @@ import Fence2B from "../assets/fence2-before.jpg";
 import Fence2A from "../assets/fence2-after.jpg";
 import Fence3B from "../assets/fence3-before.jpg";
 import Fence3A from "../assets/fence3-after.jpg";
+import PaulineFA from "../assets/pauline-fence-after.jpg";
+import PaulineFB from "../assets/pauline-fence-before.jpg";
+import PaulineWashed from "../assets/pauline-fence-pressure-washed.jpg";
+import PaulineDA from "../assets/pauline-deck-after.jpg";
+import PaulineDB from "../assets/pauline-deck-before.jpg";
 import "../css/Home.css";
 
 function Home() {
@@ -22,6 +27,14 @@ function Home() {
     Fence3A,
     Fence3B
   ];
+
+  const gallery2 = [
+    PaulineFA,
+    PaulineWashed,
+    PaulineFB,
+    PaulineDA,
+    PaulineDB
+  ]
 
   const quotes = [
     '"These guys are very proffessional despite their age! They offered me a wonderful service at a great price!" - Twee Ta',
@@ -69,7 +82,7 @@ function Home() {
 
           <div className="column-right">
             <div className="review-slot-right">
-              <ImageGallery images={gallery1} />
+              <ImageGallery images={gallery2} />
               <div className="quote">
                 {quotes[1]}
               </div>

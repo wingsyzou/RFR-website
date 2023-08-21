@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import Header from "../components/Header";
 import '../css/Services.css';
+import washedVsUnwashed from "../assets/washed-vs-unwashed.jpg";
+import sanding from "../assets/sanding.jpg";
 
 function Services() {
   const packagesRef = useRef(null);
@@ -46,6 +48,10 @@ function Services() {
             {service}
           </div>
         ))}
+      </div>
+      <div className="photos">
+        <img src={washedVsUnwashed} alt="Picture of pressure washed fence versus to unwashed fence"></img>
+        <img src={sanding} alt="Picture of us sanding a fence"></img>
       </div>
       <h1 className="packageTitle" id="packages">Packages</h1>
       <div className="packages" ref={packagesRef}>

@@ -23,6 +23,17 @@
     color: green;
 }
 
+.photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.photos img {
+    width: 45%;
+    border-radius: 8px;
+}
+
 .packageTitle {
     background-color: #236F21;
     text-align: center;

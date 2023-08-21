@@ -41,7 +41,7 @@ function Home() {
 
   return (
     <div className="home">
-      <Header />
+      <Header title="Your Partners in Fence Restoration" />
       <div className="consultation">
         <Link to="/services"> All Services </Link>
         <Link to="/services/packages"> Packages </Link>

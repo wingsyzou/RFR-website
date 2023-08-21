@@ -55,9 +55,9 @@ function BookConsultation() {
 
   return (
     <div className="book-consultation">
-      <Header />
+      <Header title="Book Your Consultation Now" />
       <div className="service-details">
-        <h1>Book Consultation</h1>
+        <h1>Booking Information</h1>
         <form onSubmit={handleSubmit}>
           <input
             type="text"

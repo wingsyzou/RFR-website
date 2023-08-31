@@ -13,6 +13,7 @@ import PaulineFB from "../assets/pauline-fence-before.jpg";
 import PaulineWashed from "../assets/pauline-fence-pressure-washed.jpg";
 import PaulineDA from "../assets/pauline-deck-after.jpg";
 import PaulineDB from "../assets/pauline-deck-before.jpg";
+import HieuB from "../assets/hieu-before.jpg";
 import "../css/Home.css";
 
 function Home() {
@@ -36,9 +37,13 @@ function Home() {
     PaulineDB
   ]
 
+  const gallery3 = [
+    HieuB
+  ]
+
   const quotes = [
     '"These guys are very proffessional despite their age! They offered me a wonderful service at a great price!" - Twee Ta',
-    '"They did such a great job! I would definitely recommend" - Sharon',
+    '"I was actually really surprised at how well they did. The job certainly had premium quality" - Pauline',
     '"These guys are great! Nice and kind gentlemen they are!" - Bill',
     '"I did not even know my fences needed to be taken care of. Thanks to Wing and Hieu my fences look brand new!" - Paul'
   ];
@@ -93,7 +98,7 @@ function Home() {
         <div className="row">
           <div className="column-left">
             <div className="review-slot-left">
-              <ImageGallery images={gallery1} />
+              <ImageGallery images={gallery3} />
               <div className="quote">
                 {quotes[2]}
               </div>

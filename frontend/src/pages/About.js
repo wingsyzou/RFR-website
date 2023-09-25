@@ -19,7 +19,7 @@ function About() {
           <div className="profile">
             <img src={Hieu} />
             <h2>Hieu Ta</h2>
-            <p>Currently a cock and balls torture enjoyer</p>
+            <p>Currently enrolled in the Schulich program at York University. Hieu is interested in the networking side of the business, but at the same time has his own experience in painting projects involving both interior and exterior.</p>
           </div>
           <div className="profile">
             <img src={Wing} />
